@@ -1,0 +1,4 @@
+
+<div style="display: flex">
+    <app-recipe *ngFor="let recipe of recipes"  [recipe]="recipe" (event)="delete($event)"></app-recipe>
+</div>
