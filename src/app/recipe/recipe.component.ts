@@ -19,7 +19,7 @@ event = new EventEmitter<Recipe>();
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
-  this.recipeService.getRecipe(this.recipe.id.toString()).subscribe(result => console.log(result))
+  this.recipeService.getRecipe(this.recipe.id.toString()).subscribe()
     }
 
   toggleExpand(){

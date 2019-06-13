@@ -1,17 +1,14 @@
-<div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-  <div class="example-container">
-      <mat-form-field>
-        <input matInput id="name" name="name" placeholder="Nom de la recette" [(ngModel)]="recipe.name">
-      </mat-form-field>
-    
-      <mat-form-field>
-        <input matInput id="description" name="description" placeholder="Description"  [(ngModel)]="recipe.description">
-      </mat-form-field>
-      <mat-form-field>
-          <input matInput id="picture" name="picture" placeholder="picture"  [(ngModel)]="recipe.picture">
-        </mat-form-field>
-      <button mat-button (click)="onSubmit()" class="btn btn-primary" >Enregistrer</button>
-      
-    </div>
-</div></div>
+<div class="example-container">
+  <mat-form-field>
+    <input matInput id="name" name="name" placeholder="Nom de la recette" [(ngModel)]="recipe.name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput id="description" name="description" placeholder="Description" [(ngModel)]="recipe.description">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput id="picture" name="picture" placeholder="picture" [(ngModel)]="recipe.picture">
+  </mat-form-field>
+  <button mat-button (click)="onSubmit()" class="btn btn-primary">Enregistrer</button>
+
+</div>

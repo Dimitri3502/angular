@@ -4,9 +4,15 @@ import {Routes, RouterModule} from '@angular/router';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import {EditRecipeComponent} from './edit-recipe/edit-recipe.component';
+import { ReactiveAddRecipeComponent } from './reactive-add-recipe/reactive-add-recipe.component';
 
 
 const routes: Routes = [
+  {
+    path: 'recipes/reactiveAdd',
+      component: ReactiveAddRecipeComponent,
+      pathMatch: 'full'
+  },
   {
     path: 'recipes/add',
       component: EditRecipeComponent,

@@ -1,0 +1,15 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <form [formGroup]="recipeForm" (ngSubmit)="onSubmitForm()">
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" id="name" class="form-control" placeholder="name" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" id="description" class="form-control" placeholder="description" formControlName="description">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" id="picture" class="form-control" placeholder="picture" formControlName="picture">
+    </mat-form-field>
+    <button mat-button [disabled]="!recipeForm.valid" type="submit" class="btn btn-primary">Soumettre</button>
+  </form>
+</div>

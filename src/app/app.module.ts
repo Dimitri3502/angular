@@ -10,7 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveAddRecipeComponent } from './reactive-add-recipe/reactive-add-recipe.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +20,16 @@ import { FormsModule } from '@angular/forms';
     RecipeComponent,
     RecipesComponent,
     RecipeDetailComponent,
-    EditRecipeComponent
+    EditRecipeComponent,
+    ReactiveAddRecipeComponent
   ],
   imports: [
     BrowserModule,
     CustomMaterialModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
